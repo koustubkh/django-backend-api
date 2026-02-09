@@ -1,30 +1,148 @@
 Full Stack Facts Application
-1. How I developed this application
+Project Overview
+
+This project is a simple full-stack web application developed as part of the Beni Technical Assessment.
+The application demonstrates frontend–backend integration using Django (backend) and React (frontend), along with REST API communication and deployment readiness.
+
+The backend exposes a REST API that returns a list of hardcoded facts in JSON format, and the frontend consumes this API to display the facts in a user-friendly interface.
+
+Technologies Used
 Backend
 
-The backend of this application was developed using Django to create a REST API.
-A simple API endpoint was implemented to return a hardcoded list of facts in JSON format.
-The API follows REST principles and was tested locally to ensure correct responses.
-CORS was configured to allow secure communication between the frontend and backend.
-The backend code was structured to be simple, readable, and easy to maintain.
+Python
+
+Django
+
+Django REST Framework
+
+SQLite (default for development)
 
 Frontend
 
-The frontend of this application was developed using React.
-A user interface was created to fetch data from the backend REST API using HTTP GET requests.
-React hooks such as useEffect and useState were used to manage data fetching and application state.
-The fetched facts are displayed in a clean and readable format with basic UI styling.
-The frontend was tested to ensure it successfully communicates with the backend API.
+React
 
-2. What I learnt in this exercise
+JavaScript
 
-Through this exercise, I gained practical experience in building a full-stack web application.
-I learned how to develop REST APIs using Django and connect them with a React frontend.
-I understood how CORS works and how to resolve cross-origin issues between frontend and backend services.
-I also learned how to structure frontend and backend code separately and prepare the application for deployment.
-Overall, this project improved my understanding of full-stack development and real-world application workflows.
+HTML
 
+CSS
+
+Tools & Platforms
+
+Git & GitHub
+
+REST APIs
+
+Browser Fetch API
+
+Project Structure
 project-root/
- ├── backend/
- ├── frontend/
- └── README.md
+├── backend/
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── django project files
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── React application files
+│
+└── README.md
+
+Backend Details
+
+The backend was developed using Django to create a REST API endpoint.
+
+API Endpoint
+GET /api/facts/
+
+Sample Response
+[
+  { "id": 1, "fact": "The sun is a star." },
+  { "id": 2, "fact": "Water boils at 100°C." },
+  { "id": 3, "fact": "Earth has one moon." }
+]
+
+Backend Features
+
+REST API returning JSON data
+
+CORS configured to allow frontend access
+
+Simple and clean API structure
+
+Ready for cloud deployment
+
+Frontend Details
+
+The frontend was developed using React.
+
+Frontend Features
+
+Fetches data from the backend API
+
+Displays facts dynamically
+
+Uses React hooks (useEffect, useState)
+
+Clean and minimal UI
+
+Handles API loading and error states
+
+How I Developed This Application
+Backend Development
+
+I created the backend using Django and Django REST Framework.
+A REST API endpoint was implemented to return a hardcoded list of facts in JSON format.
+CORS was configured to allow communication between the frontend and backend.
+The backend was tested locally to ensure correct API responses before integration.
+
+Frontend Development
+
+I developed the frontend using React.
+The application fetches data from the backend API using HTTP GET requests.
+React hooks were used to manage state and lifecycle events.
+Basic styling was applied to present the data clearly and neatly.
+
+What I Learned From This Exercise
+
+Through this project, I gained hands-on experience in building a full-stack web application.
+I learned how to:
+
+Create REST APIs using Django
+
+Connect a React frontend with a backend API
+
+Handle CORS issues between frontend and backend
+
+Structure a full-stack project professionally
+
+Use Git and GitHub for version control
+
+Prepare applications for cloud deployment
+
+This exercise helped me understand real-world frontend–backend interaction and improved my confidence in full-stack development.
+
+How to Run the Project Locally
+Backend
+cd backend
+pip install -r requirements.txt
+python manage.py runserver
+
+Frontend
+cd frontend
+npm install
+npm run dev
+
+Submission Details
+
+GitHub Repository: Public repository containing frontend and backend code
+
+Live Frontend URL: Provided in submission email
+
+Backend API URL: Provided in submission email
+
+Author
+
+Koustubh Hungund
